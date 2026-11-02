@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Galeria | CETIRRM Tech</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+
+            <h1>CETIRRM <span>Tech</span></h1>
+
+            <p>Centro Integrado de Tempo Integral Ritinha Rosa de Moura</p>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="turma.html">Nossa Turma</a></li>
+                    <li><a href="escola.html">Nossa Escola</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="pagina-interna">
+            <div class="container">
+
+                <h2>Nossa Galeria</h2>
+
+                <p>
+                    Momentos, experiências e conquistas que fazem
+                    parte da nossa trajetória escolar.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="galeria container">
+
+            <h2>Registros da nossa caminhada</h2>
+
+            <!-- FILTROS -->
+            <div class="filtros">
+
+                <button class="filtro ativo" data-categoria="todos">
+                    Todas
+                </button>
+
+                <button class="filtro" data-categoria="turma">
+                    Nossa Turma
+                </button>
+
+                <button class="filtro" data-categoria="eventos">
+                    Eventos
+                </button>
+
+                <button class="filtro" data-categoria="projetos">
+                    Projetos
+                </button>
+
+            </div>
+
+            <!-- FOTOS -->
+            <div class="galeria-grid">
+
+                <article class="foto-card" data-categoria="turma">
+                    <img src="img/turma/entrevista1.jpeg"
+                         alt="Registro da turma">
+                    <h3>Nossa Turma</h3>
+                    <p>Momentos da nossa caminhada escolar.</p>
+                </article>
+
+                <article class="foto-card" data-categoria="eventos">
+                    <img src="img/eventos/thumbs.jpeg"
+                         alt="Registro de evento escolar">
+                    <h3>Eventos</h3>
+                    <p>Participação em atividades escolares.</p>
+                </article>
+
+                <article class="foto-card" data-categoria="projetos">
+                    <img src="img/projetos/entrevista.jpeg"
+                         alt="Projeto desenvolvido pelos alunos">
+                    <h3>Projetos</h3>
+                    <p>Conhecimento colocado em prática.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- JANELA PARA AMPLIAR A FOTO -->
+    <div class="modal-foto" id="modalFoto" aria-hidden="true">
+
+        <button class="fechar-modal" id="fecharModal"
+                aria-label="Fechar imagem">&times;</button>
+
+        <img id="imagemAmpliada" src="" alt="">
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CETIRRM Tech – Projeto desenvolvido pela 2ª Série.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
