@@ -11,8 +11,8 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f7fb;
-    color: #243247;
+    background-color: #f4fbfa;
+    color: #3c2447;
     line-height: 1.6;
 }
 
@@ -28,7 +28,7 @@ body {
 ===================================== */
 
 header {
-    background-color: #102b4e;
+    background-color: #13104e;
     color: white;
     padding: 25px 0;
 }
@@ -46,7 +46,20 @@ header p {
     color: #d7e4f2;
     font-size: 14px;
 }
+/* Fotografia no canto superior direito */
+header .container {
+    position: relative;
+}
 
+.foto-cabecalho {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 400px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 08px;
+}
 /* =====================================
    3. MENU DE NAVEGAÇÃO
 ===================================== */
@@ -189,6 +202,11 @@ footer {
 
     header {
         text-align: center;
+    }
+      .foto-cabecalho {
+        position: static;
+        display: block;
+        margin: 20px auto 0;
     }
 
     nav ul {
